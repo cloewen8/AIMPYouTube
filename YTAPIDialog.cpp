@@ -10,7 +10,7 @@ void YTAPIDialog::Show(OptionsDialog *dialog) {
     DialogBoxParamW(g_hInst, MAKEINTRESOURCE(IDD_YTAPISETTINGS), parent, DlgProc, (LPARAM)dialog);
 }
 
-BOOL CALLBACK YTAPIDialog::DlgProc(HWND hwnd, UINT Msg, WPARAM wParam, LPARAM lParam) {
+INT_PTR CALLBACK YTAPIDialog::DlgProc(HWND hwnd, UINT Msg, WPARAM wParam, LPARAM lParam) {
     static OptionsDialog* dialog = nullptr;
 
     switch (Msg) {

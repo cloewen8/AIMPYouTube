@@ -685,7 +685,7 @@ LRESULT CALLBACK OptionsDialog::LinkProc(HWND hWnd, UINT uMsg, WPARAM wParam, LP
     return DefSubclassProc(hWnd, uMsg, wParam, lParam);
 }
 
-BOOL CALLBACK OptionsDialog::DlgProc(HWND hwnd, UINT Msg, WPARAM wParam, LPARAM lParam) {
+INT_PTR CALLBACK OptionsDialog::DlgProc(HWND hwnd, UINT Msg, WPARAM wParam, LPARAM lParam) {
     static OptionsDialog *dialog = nullptr;
     static Plugin *plugin = nullptr;
     static HFONT userNameFont;

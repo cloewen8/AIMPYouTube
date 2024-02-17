@@ -35,7 +35,7 @@ void ExclusionsDialog::Show(HWND parent) {
     DialogBox(g_hInst, MAKEINTRESOURCE(IDD_EXCLUSIONS), parent, DlgProc);
 }
 
-BOOL CALLBACK ExclusionsDialog::DlgProc(HWND hwnd, UINT Msg, WPARAM wParam, LPARAM lParam) {
+INT_PTR CALLBACK ExclusionsDialog::DlgProc(HWND hwnd, UINT Msg, WPARAM wParam, LPARAM lParam) {
     switch (Msg) {
         case WM_CLOSE:
             EndDialog(hwnd, IDCANCEL);

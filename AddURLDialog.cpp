@@ -13,7 +13,7 @@ void AddURLDialog::Show() {
     DialogBox(g_hInst, MAKEINTRESOURCE(IDD_ADDURL), parent, DlgProc);
 }
 
-BOOL CALLBACK AddURLDialog::DlgProc(HWND hwnd, UINT Msg, WPARAM wParam, LPARAM lParam) {
+INT_PTR CALLBACK AddURLDialog::DlgProc(HWND hwnd, UINT Msg, WPARAM wParam, LPARAM lParam) {
     switch (Msg) {
         case WM_CLOSE:
             EndDialog(hwnd, IDCANCEL);

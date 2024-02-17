@@ -11,5 +11,5 @@ private:
     AddURLDialog(const AddURLDialog &);
     AddURLDialog &operator=(const AddURLDialog &);
 
-    static BOOL CALLBACK DlgProc(HWND hwnd, UINT Msg, WPARAM wParam, LPARAM lParam);
+    static INT_PTR CALLBACK DlgProc(HWND hwnd, UINT Msg, WPARAM wParam, LPARAM lParam);
 };
