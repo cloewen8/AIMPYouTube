@@ -6,4 +6,10 @@
     <LocalDebuggerWorkingDirectory>C:\Program Files (x86)\AIMP</LocalDebuggerWorkingDirectory>
     <LocalDebuggerAttach>false</LocalDebuggerAttach>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommand>C:\Program Files\AIMP\AIMP.exe</LocalDebuggerCommand>
+    <LocalDebuggerWorkingDirectory>C:\Program Files\AIMP</LocalDebuggerWorkingDirectory>
+    <LocalDebuggerAttach>false</LocalDebuggerAttach>
+  </PropertyGroup>
 </Project>
